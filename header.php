@@ -35,4 +35,14 @@
 			</li>
 		</ul>
 	</nav>
+	<div class="hero-wrapper">
+		<img src="<?php echo get_template_directory_uri() . '/images/header1.png' ?>" alt="header photo" />
+		<div class="hero-text-wrapper">
+			<div class="hero-text">
+				<h1>Lorem Ipsum</h1>
+				<h2>Anna Nowak</h2>
+			</div>
+			
+		</div>
+	</div>
 	
