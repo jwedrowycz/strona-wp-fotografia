@@ -10,15 +10,23 @@
         padding: 0;
         display: none;
         flex-direction: column;
+        position: fixed;
+        z-index: 999;
         @include mq {
             width: 40%;
             display: flex;
+            z-index: 0;
+            position: relative;
             flex-direction: row;
             justify-content: space-between;
             margin: 0 auto;
         }
         &.active {
             display: flex;
+            background: $black;
+            left: 0;
+            width: 100%;
+            
         }
 
         li {
@@ -38,7 +46,7 @@
                 width: 100%;
             }
 
-            &:hover {
+            &:hover, &:active {
                 border: 1px solid $l-pink;
             }
         }

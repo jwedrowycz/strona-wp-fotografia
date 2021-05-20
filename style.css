@@ -363,12 +363,16 @@ template {
   padding: 0;
   display: none;
   flex-direction: column;
+  position: fixed;
+  z-index: 999;
 }
 
 @media screen and (min-width: 1000px) {
   .navbar-wrapper ul {
     width: 40%;
     display: flex;
+    z-index: 0;
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
@@ -377,6 +381,9 @@ template {
 
 .navbar-wrapper ul.active {
   display: flex;
+  background: #0F110C;
+  left: 0;
+  width: 100%;
 }
 
 .navbar-wrapper ul li {
@@ -401,7 +408,7 @@ template {
   width: 100%;
 }
 
-.navbar-wrapper ul li:hover {
+.navbar-wrapper ul li:hover, .navbar-wrapper ul li:active {
   border: 1px solid #FDECEF;
 }
 
