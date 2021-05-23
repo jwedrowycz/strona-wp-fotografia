@@ -40,7 +40,7 @@
                     <h3>Social Media</h3>
                 </div>
                 <div class="row text-center justify-content-center">
-                    <div class="col-auto">
+                    <div class="col-auto sm-mb-3">
                         <a href="" class="image-link"><img src="<?php echo get_template_directory_uri() . '/images/facebook.png' ?>" alt=""></a>
                     </div>
                     <div class="col-auto">
